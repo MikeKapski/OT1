@@ -1,9 +1,36 @@
 {
-  "name": "ot1",
+  "name": "otus-learning",
   "version": "1.0.0",
-  "description": "test otus learn 1",
-  "main": "index.html",
+  "description": "otus learning trainings",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.3.0",
+    "prettier": "2.0.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3" 
+  },
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "eslint": "node_modules/.bin/eslint .src/",
     "test": "jest"
   },
   "repository": {
@@ -11,34 +38,14 @@
     "url": "git+https://github.com/MikeKapski/OT1.git"
   },
   "keywords": [
-    "Otus"
+    "otus",
+    "learning",
+    "react"
   ],
-  "author": "MIkhail Kapskiy",
+  "author": "Mikhail Kapski",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/MikeKapski/OT1/issues"
   },
-  "homepage": "https://github.com/MikeKapski/OT1#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/preset-typescript": "^7.9.0",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "jest": "^25.2.7",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.8.7",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "^3.1.2"
-  }
+  "homepage": "https://github.com/MikeKapski/OT1#readme"
 }
