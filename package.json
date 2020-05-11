@@ -15,8 +15,8 @@
     "react-loki": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
     "@storybook/addon-actions": "^5.3.18",
@@ -46,12 +46,12 @@
     "prettier": "2.0.4",
     "react-docgen-typescript-loader": "^3.7.2",
     "ts-jest": "^25.4.0",
-    "ts-loader": "^7.0.1",
+    "ts-loader": "^7.0.4",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
+    "webpack": "^4.43.0",
     "webpack-blocks": "^2.0.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
     "start": "npx webpack-dev-server --mode development --open --hot",
@@ -64,18 +64,26 @@
     "storybook": "start-storybook",
     "build-storybook": "build-storybook"
   },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  },
   "loki": {
     "configurations": {
       "chrome.laptop": {
-        "target": "chrome.docker",
+        "target": "chrome.app",
         "width": 1366,
         "height": 768,
         "deviceScaleFactor": 1,
         "mobile": false
       },
-      "chrome.iphone7": {
-        "target": "chrome.docker",
-        "preset": "iPhone 7"
+      "chrome.a4": {
+        "target": "chrome.app",
+        "width": 1980,
+        "height": 1024,
+        "deviceScaleFactor": 1,
+        "mobile": true
       }
     }
   },

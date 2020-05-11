@@ -1,3 +1,7 @@
+const path = require('path');
+const webpack = require('webpack');
+const custom = require('../webpack.config.js');
+
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
   addons: [
